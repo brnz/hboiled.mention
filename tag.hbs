@@ -7,15 +7,15 @@
   <div class="headingSub {{#if tag.image}}" style="background-color: rgba(255,255,255,0.5);{{/if}}">
     <h1 class="headingTitle">{{tag.name}}<br></h1>
     {{#if tag.description}}
-        {{tag.description}}
+    {{tag.description}}
     {{/if}}
   </div>
 </section>
 <div class="headerMenu">
-{{navigation}}
+  {{navigation}}
 </div>
 {{! The main content area on the homepage }}
 <main class="mainContent" role="main">
-    {{! The tag below includes the post loop - partials/loop.hbs }}
-    {{> "loop"}}
+  {{! The tag below includes the post loop - partials/loop.hbs }}
+  {{> "loop"}}
 </main>
