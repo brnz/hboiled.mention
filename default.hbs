@@ -64,11 +64,22 @@
       <div class="progressbar"></div>
     </div>
     {{! Everything else gets inserted here }}
-    {{{body}}}
+    <div id="context-flex">
+      <div id="content-body">
+        {{{body}}}
+      </div>
+      <div id="sidebar-container">
+        {{sidebar}}
+        <p>test</p>
+      </div>
+    </div>
     <footer>
       <div class="firstfooter">
-        <div class="footerMenu">
-          {{navigation}}
+        <div align="right" class="footerMenu">
+          {{! TODO replace with login tag }}
+          <li class="navLink" role="presentation">
+            <a class="readMore" href="/ghost/">login to ghost</a>
+          </li>
         </div>
       </div>
     </footer>

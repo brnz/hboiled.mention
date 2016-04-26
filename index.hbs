@@ -1,17 +1,16 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+<div class="headerMenu">
+  {{navigation}}
+</div>
 
 {{! The big featured header }}
-
-<section class="heading {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+<!-- <section class="heading {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}"> -->
+<section class="heading no-cover">
   <div class="headingSub">
     <h1 class="headingTitle">{{@blog.title}}<br><span>{{@blog.description}}</span></h1>
   </div>
 </section>
-
-<div class="headerMenu">
-  {{navigation}}
-</div>
 
 {{! The main content area on the homepage }}
 <div class="mainContent">
